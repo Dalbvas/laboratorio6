@@ -3,14 +3,16 @@ document.getElementById("generar").addEventListener("click", generar);
 document.getElementById("limpiar").addEventListener("click", limpiar);
 
 /*Creamos la primer funcion que sera generar los numeros*/
-function generar() {
+function generar() 
+{
   /*Declaramos las variables a utilizar*/
   var mayor=0;
   var menor=100;
   var cantidadNumeros = 15;
   var myArray = []
   /*Generamos numeros aleatarios */
-  while (myArray.length < cantidadNumeros) {
+  while (myArray.length < cantidadNumeros) 
+  {
     /*Guardamos los numeros aleatorios en una variable */
     var numeroAleatorio = Math.round(Math.random() * 100);
     /*Guardamos la variable dentro del arreglo de numeros */
@@ -25,7 +27,8 @@ function generar() {
   var width = 50;
   var X = 2;
   /*Recorremos todo el arreglo de numeros para poder ir imprimiendo cada uno de los numeros*/
-  for (i = 0; i < myArray.length; i++) {
+  for (i = 0; i < myArray.length; i++) 
+  {
     ctx.fillStyle = '#008080';
     var h = myArray[i];
     ctx.fillRect(X, canvas.height - h, width, h);
